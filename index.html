@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form with Validation</title>
+  </head>
+  <body>
+    <center>
+      <div class="validation-summary">
+        <p>All: <span class="total-count">0</span></p>
+        <p>Need: <span class="required-count">0</span></p>
+        <p>Success: <span class="valid-count">0</span></p>
+        <p>Error: <span class="invalid-count">0</span></p>
+      </div>
+      <form name="signup">
+        <label for="name">
+          <span class="title">Name</span>
+          <input type="text" name="name1" placeholder="Name" />
+          <span class="error-message"></span>
+        </label>
+        <label for="surname" class="required">
+          <span class="title">Surname</span>
+          <input type="text" name="surname1" placeholder="Surname" />
+          <span class="error-message">Need to fill</span>
+        </label>
+        <label for="password1" class="required">
+          <span class="title">Password</span>
+          <input type="password" name="password1" placeholder="Password" />
+          <span class="error-message">Need to fill</span>
+        </label>
+        <label for="Phone Number">
+          <span class="title">Phone Number</span>
+          <input type="text" name="Phone Number" placeholder="Phone Number" />
+          <span class="error-message"></span>
+        </label>
+        <label for="Age" class="required">
+          <span class="title">Age</span>
+          <input type="text" name="Age" placeholder="Age" />
+          <span class="error-message">Need to fill</span>
+        </label>
+        <label for="About" class="required">
+          <span class="title">About You</span>
+          <input type="password" name="About" placeholder="About you" />
+          <span class="error-message">Need to fill</span>
+        </label>
+        <div class="btm">
+          <button type="submit" class="submit-btn">Submit</button>
+        </div>
+      </form>
+    </center>
+    <script src="index.js"></script>
+  </body>
+</html>

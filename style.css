@@ -1,0 +1,92 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.validation-summary {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+form {
+  width: fit-content;
+  margin: 0 auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  flex-direction: column;
+  gap: 10px 40px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: start;
+  position: relative;
+}
+
+.title,
+.error-message {
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+}
+
+input {
+  padding: 14px 12px;
+  border-radius: 4px;
+  border: 1px solid #949494;
+  outline: none;
+}
+
+.btm {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.required .title {
+  color: #4200ff;
+}
+
+.required input {
+  border-color: #4200ff;
+}
+
+.error .title,
+.error .error-message {
+  color: #ee0004;
+}
+
+.error input {
+  border-color: #ee0004;
+}
+
+.error::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("img/error.svg"); /* Убедитесь, что путь правильный относительно файла CSS */
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 35px;
+  right: -25px;
+}
+
+button {
+  background-color: #4200ff;
+  color: white;
+  border: none;
+  padding: 10px 45px;
+}
+
+.suberror {
+  background-color: #ee0004;
+}
