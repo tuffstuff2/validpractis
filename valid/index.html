@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Информация о заявителе</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Информация о заявителе</h1>
+        <p>Заполните форму</p>
+      </div>
+      <div class="status-bar">
+        All: <span class="total-count">0</span> &nbsp; Need:
+        <span class="required-count">0</span> &nbsp; Success:
+        <span class="valid-count">0</span>/<span class="required-count">0</span>
+        &nbsp; Error: <span class="invalid-count">0</span>/<span
+          class="required-count"
+          >0</span
+        >
+      </div>
+      <form name="signup" class="form-grid">
+        <label class="required">
+          <span class="title">First name</span>
+          <input type="text" name="first-name" placeholder="First name" />
+          <span class="error-message">This field is required</span>
+        </label>
+        <label class="required">
+          <span class="title">First name</span>
+          <input type="text" name="first-name" placeholder="First name" />
+          <span class="error-message">This field is required</span>
+        </label>
+        <label class="required">
+          <span class="title">Last name</span>
+          <input type="text" name="last-name" placeholder="Last name" />
+          <span class="error-message">This field is required</span>
+        </label>
+        <label class="required grid-item">
+          <span class="title">Social security</span>
+          <input
+            type="text"
+            name="social-security"
+            placeholder="Social security"
+          />
+          <span class="error-message">This field is required</span>
+        </label>
+        <label class="required full-width">
+          <span class="title">Birth date</span>
+          <input type="date" name="birth-date" />
+          <span class="error-message">This field is required</span>
+        </label>
+        <label class="required full-width">
+          <span class="title">Email address</span>
+          <input type="email" name="email" placeholder="Email address" />
+          <span class="error-message">This field is required</span>
+        </label>
+        <label class="required">
+          <span class="title">Home phone</span>
+          <input type="tel" name="home-phone" placeholder="Home phone" />
+          <span class="error-message">This field is required</span>
+        </label>
+        <label class="required">
+          <span class="title">Cell phone</span>
+          <input type="tel" name="cell-phone" placeholder="Cell phone" />
+          <span class="error-message">This field is required</span>
+        </label>
+        <label class="required full-width grid-item">
+          <span class="title">Street address</span>
+          <input
+            type="text"
+            name="street-address"
+            placeholder="Street address"
+          />
+          <span class="error-message">This field is required</span>
+        </label>
+        <label class="required">
+          <span class="title">ZIP/Postal code</span>
+          <input type="text" name="zip-code" placeholder="ZIP/Postal code" />
+          <span class="error-message">This field is required</span>
+        </label>
+        <label class="required">
+          <span class="title">Apartment/Suite</span>
+          <input type="text" name="apartment" placeholder="Apartment/Suite" />
+          <span class="error-message">This field is required</span>
+        </label>
+        <label class="required full-width">
+          <span class="title">City</span>
+          <input type="text" name="city" placeholder="City" />
+          <span class="error-message">This field is required</span>
+        </label>
+        <label class="required full-width">
+          <span class="title">State/Province</span>
+          <input type="text" name="state" placeholder="State/Province" />
+          <span class="error-message">This field is required</span>
+        </label>
+        <label class="full-width">
+          <span class="title">Type of residence</span>
+          <input
+            list="residences"
+            name="residence"
+            placeholder="Type of residence"
+          />
+          <datalist id="residences">
+            <option value="Dog"></option>
+            <option value="Kapibara"></option>
+            <option value="Ostrich"></option>
+          </datalist>
+          <div class="residence-images">
+            <img src="img/dog.jpg" alt="Dog" class="residence-image hidden" />
+            <img
+              src="img/kapibara.jpg"
+              alt="Kapibara"
+              class="residence-image hidden"
+            />
+            <img
+              src="img/ostrich.jpg"
+              alt="Ostrich"
+              class="residence-image hidden"
+            />
+          </div>
+          <span class="error-message">This field is required</span>
+        </label>
+        <div class="btm">
+          <button type="submit" class="submit-btn ">Submit</button>
+        </div>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
